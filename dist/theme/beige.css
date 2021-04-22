@@ -30,7 +30,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading2-size: 2.11em;
   --heading3-size: 1.55em;
   --heading4-size: 1em;
-  --code-font: monospace;
+  --code-font: Fira, Consolas, Menlo, Bitstream Vera Sans Mono, monospace, Powerline Symbols;
   --link-color: #8b743d;
   --link-color-hover: #c0a86e;
   --selection-background-color: rgba(79, 64, 28, 0.99);
@@ -187,13 +187,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   margin: 20px auto;
   text-align: left;
   font-size: 0.55em;
-  font-family: monospace;
+  font-family: "Fira", Consolas, Menlo, "Bitstream Vera Sans Mono", monospace, "Powerline Symbols";
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
 
 .reveal code {
-  font-family: monospace;
+  font-family: "Fira", Consolas, Menlo, "Bitstream Vera Sans Mono", monospace, "Powerline Symbols";
   text-transform: none; }
 
 .reveal pre code {

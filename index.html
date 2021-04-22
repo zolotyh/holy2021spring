@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
     <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
-    <link rel="stylesheet" href="fonts/Jura.css" id="theme" />
+    <link rel="stylesheet" href="fonts/Jura.css" />
+    <link rel="stylesheet" href="fonts/Fira.css" />
     <link rel="stylesheet" href="asciicinema/asciinema-player.css" />
 
     <style>
@@ -119,6 +120,14 @@
     <div class="reveal">
       <canvas id="c"></canvas>
       <div class="slides">
+        <section>
+          <div id="typed-strings">
+            <!-- enter custom text below here -->
+            Hello
+            <!-- enter custom text above here -->
+          </div>
+          <span id="typed"></span>
+        </section>
         <section data-transition="zoom">
           <h1>Гипперавтоматизированный пайплайн</h1>
           <p>Почему матрица должна победить</p>
@@ -171,50 +180,72 @@
         >
           После...
         </section>
-        <section data-background-color="#132B1D" data-background-image="./img/arch.jpeg"></section>
-        <section data-background-color="#132B1D">Слабости людей</section>
-        <section data-background-color="#132B1D">
-          <h3>Ограниченные ресурсы</h3>
+        <section
+          data-transition="fade-in none"
+          data-background-color="#132B1D"
+          data-background-image="./img/arch2.png"
+        >
+          <p class="terminal"><span class="blinking-cursor">$</span> matrix has you</p>
+        </section>
+        <section
+          data-transition="none zoom-out"
+          data-background-image="./img/happy.png"
+          data-background-opacity="0.85"
+        >
+          <p class="terminal"><span class="blinking-cursor">$</span> matrix has you</p>
+        </section>
+        <section data-transition="fade-in" data-background-color="#132B1D">
+          <section>
+            <p class="r-fit-text">Слабости</p>
+          </section>
+          <section>
+            <h3>Ограниченные ресурсы</h3>
+          </section>
+          <section>
+            <h3>1. Ограничения</h3>
+            <ul>
+              <li class="fragment">Внимание</li>
+              <li class="fragment">Память</li>
+              <li class="fragment">Мыслетопливо</li>
+            </ul>
+          </section>
+          <section>
+            <h3>2. Лень</h3>
+          </section>
+          <section>
+            <h3>3. Совместимость с другими</h3>
+          </section>
+          <section>
+            <h3>4. Ментальные ловушки</h3>
+          </section>
         </section>
         <section data-background-color="#132B1D">
-          <h3>1. Ограничения</h3>
-          <ul>
-            <li class="fragment">Внимание</li>
-            <li class="fragment">Память</li>
-            <li class="fragment">Работоспособность</li>
-            <li class="fragment">Мыслетопливо</li>
-          </ul>
+          <section>
+            <p class="r-fit-text">Сильные стороны</p>
+          </section>
+          <section>
+            <h3>1. Умение принимать нетривиальные решения</h3>
+          </section>
+          <section>
+            <h3>2. Эмпатия</h3>
+          </section>
+          <section>
+            <h3>3. Отказ от ранее принятых решений</h3>
+          </section>
         </section>
-        <section data-background-color="#132B1D">
-          <h3>2. Лень</h3>
-          <p class="fragment">Двигатель прогресса</p>
-        </section>
-        <section data-background-color="#132B1D">
-          <h3>3. Совместимость с другими</h3>
-        </section>
-        <section data-background-color="#132B1D">
-          <h3>4. Ментальные ловушки</h3>
-        </section>
-        <section data-background-color="#132B1D">Сильные стороны</section>
-        <section data-background-color="#132B1D">
-          <h3>1. Умение принимать нетривиальные решения</h3>
-        </section>
-        <section data-background-color="#132B1D">
-          <h3>2. Эмпатия</h3>
-        </section>
-        <section data-background-color="#132B1D">
-          <h3>2. Отказ от ранее принятых решений</h3>
-        </section>
-        <section data-background-color="#132B1D">
+        <section data-transition="zoom-out" data-background-color="#132B1D">
           <h3>&mdash; Что делать?</h3>
-          <div class="fragment">
-            <small>
-              <strike>Снимать штаны и бегать</strike>
-            </small>
-            <p>&mdash; Построить свою матрицу!</p>
-          </div>
         </section>
-        <section data-background-color="#132B1D">Пайплайн в широком смысле слова</section>
+        <section
+          data-transition="fade-in zoom-out"
+          data-background-color="#132B1D"
+          data-background-image="./img/arch.jpeg"
+        >
+          <p>&mdash; Построить свою матрицу!</p>
+        </section>
+        <section data-transition="fade-in" data-background-color="#132B1D">
+          Пайплайн в широком смысле слова
+        </section>
         <section data-background-color="#132B1D">
           <section>1. Чем быстрее обратная связь, тем лучше</section>
           <section>Проверка типов</section>
@@ -234,6 +265,20 @@
         <section data-background-color="#132B1D">
           <section>3. Проще сделать, чем не сделать</section>
           <section>Больше линтеров</section>
+          <section>
+            <p>Проверка на копипасту</p>
+            <p>
+              <a href="https://github.com/kucherenko/jscpd"> github.com/kucherenko/jscpd </a>
+            </p>
+          </section>
+          <section data-transition="zoom-out fade-in" data-background="#132B1D">
+            <asciinema-player src="./casts/duplicates.cast" font-size="big"></asciinema-player>
+          </section>
+          <section
+            data-transition="zoom-out fade-in"
+            data-background="#132B1D"
+            data-background-video="./img/duplicates.mp4"
+          ></section>
           <section>Боты</section>
           <section>Максимально строгий конфиг по типам</section>
         </section>
@@ -252,25 +297,29 @@
         <section data-background-color="#132B1D">Внедрение и большие проекты</section>
         <section data-background-color="#132B1D">Ложка дегтя</section>
         <section>Делать то, что доставляет удовольствие, — значит быть свободным.</section>
-        <!--<section data-transition="zoom-out fade-in" data-background="#132B1D">-->
-        <!--<asciinema-player src="./casts/demo2.cast"></asciinema-player>-->
-        <!--</section>-->
       </div>
     </div>
 
+    <script charset="utf-8" src="./asciicinema/asciinema-player.js"></script>
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/asciicinema/index.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        width: 1366,
+        height: 768,
+        margin: 0.04,
+        minScale: 0.2,
+        maxScale: 2.0,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, Asciicinema],
       });
     </script>
     <script charset="utf-8">
@@ -286,10 +335,8 @@
       var matrix = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%';
       //converting the string into an array of single characters
       matrix = matrix.split('');
-
       var font_size = 10;
-      var columns = c.width / font_size; //number of columns for the rain
-      //an array of drops - one per column
+      var columns = c.width / font_size; //number of columns for the rain //an array of drops - one per column
       var drops = [];
       //x below is the x coordinate
       //1 = y co-ordinate of the drop(same for every drop initially)
@@ -322,6 +369,5 @@
 
       setInterval(draw, 35);
     </script>
-    <script charset="utf-8" src="./asciicinema/asciinema-player.js"></script>
   </body>
 </html>

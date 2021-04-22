@@ -97,6 +97,7 @@
     }
   },
   "dependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "typed-js": "^0.2.3"
   }
 }
