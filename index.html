@@ -5,7 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+      />
 
     <title>reveal.js</title>
 
@@ -17,18 +17,26 @@
     <link rel="stylesheet" href="asciicinema/asciinema-player.css" />
 
     <style>
-      /* .card {
+/* .card {
    height: 100vh;
    width: 100vw;
    margin-right: 100px;
    background-color: black;
 } */
+.table {
+}
 
-      .black {
-        background-color: black;
-        height: 100vh;
-        width: 100vw;
-      }
+.reveal .table td, .reveal .table th {
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid;
+}
+
+.black {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
       .shaded {
         background-color: rgba(0, 0, 0, 0.8);
         height: 100vh;
@@ -114,19 +122,20 @@
       }
     </style>
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
+    <link rel="stylesheet" href="plugin/highlight/stackoverflow-dark.css" id="highlight-theme" />
   </head>
   <body>
     <div class="reveal">
       <canvas id="c"></canvas>
       <div class="slides">
-        <section>
-          <div id="typed-strings">
-            <!-- enter custom text below here -->
-            Hello
-            <!-- enter custom text above here -->
-          </div>
-          <span id="typed"></span>
+        <section></section>
+        <section data-background-color="#132B1D">
+          <blockquote style="font-size: 0.5em">
+            Из&nbsp;серых наших стен, из&nbsp;затхлых рубежей нет выхода, кроме как</br>
+            Сквозь дырочки от&nbsp;звезд, пробоины от&nbsp;снов, туда, где на&nbsp;пергаментном листе зари</br>
+            Пикирующих птиц, серебряных стрижей печальная хроника</br>
+            Записана шутя, летучею строкой, бегущею строкой, поющей изнутри.
+          </blockquote>
         </section>
         <section data-transition="zoom">
           <h1>Гипперавтоматизированный пайплайн</h1>
@@ -137,166 +146,654 @@
           data-background-image="img/lion2.jpeg"
           data-background-color="#41311B"
           data-background-size="contain"
-        >
+          >
           <p class="r-fit-text">Добро и зло</p>
         </section>
         <section
           data-transition="zoom-out fade-in"
           data-background-color="#132B1D"
           data-background-image="img/1.jpeg"
-        ></section>
+          ></section>
         <section
           data-transition="zoom-out fade-in"
           data-background-color="#132B1D"
           data-background-image="img/anderson.png"
-        >
+          >
           До...
         </section>
-        <section
-          data-transition="fade-in none"
-          data-background-color="#132B1D"
-          data-background-image="img/tablets.png"
-        >
-          Выбор
-        </section>
-        <section
-          data-transition="none zoom-out"
-          data-background-color="#132B1D"
-          data-background-image="img/tablets2.png"
-        >
-          Выбор
-        </section>
-        <section
-          data-transition="fade-in none"
-          data-background-color="#132B1D"
-          data-background-image="img/eat0.png"
-        >
-          После...
-        </section>
-        <section
-          data-transition="none zoom-out"
-          data-background-color="#132B1D"
-          data-background-image="img/eat.png"
-        >
-          После...
-        </section>
-        <section
-          data-transition="fade-in none"
-          data-background-color="#132B1D"
-          data-background-image="./img/arch2.png"
-        >
-          <p class="terminal"><span class="blinking-cursor">$</span> matrix has you</p>
-        </section>
-        <section
-          data-transition="none zoom-out"
-          data-background-image="./img/happy.png"
-          data-background-opacity="0.85"
-        >
-          <p class="terminal"><span class="blinking-cursor">$</span> matrix has you</p>
-        </section>
-        <section data-transition="fade-in" data-background-color="#132B1D">
-          <section>
-            <p class="r-fit-text">Слабости</p>
-          </section>
-          <section>
-            <h3>Ограниченные ресурсы</h3>
-          </section>
-          <section>
-            <h3>1. Ограничения</h3>
-            <ul>
-              <li class="fragment">Внимание</li>
-              <li class="fragment">Память</li>
-              <li class="fragment">Мыслетопливо</li>
-            </ul>
-          </section>
-          <section>
-            <h3>2. Лень</h3>
-          </section>
-          <section>
-            <h3>3. Совместимость с другими</h3>
-          </section>
-          <section>
-            <h3>4. Ментальные ловушки</h3>
-          </section>
-        </section>
-        <section data-background-color="#132B1D">
-          <section>
-            <p class="r-fit-text">Сильные стороны</p>
-          </section>
-          <section>
-            <h3>1. Умение принимать нетривиальные решения</h3>
-          </section>
-          <section>
-            <h3>2. Эмпатия</h3>
-          </section>
-          <section>
-            <h3>3. Отказ от ранее принятых решений</h3>
-          </section>
-        </section>
-        <section data-transition="zoom-out" data-background-color="#132B1D">
-          <h3>&mdash; Что делать?</h3>
-        </section>
-        <section
-          data-transition="fade-in zoom-out"
-          data-background-color="#132B1D"
-          data-background-image="./img/arch.jpeg"
-        >
-          <p>&mdash; Построить свою матрицу!</p>
-        </section>
-        <section data-transition="fade-in" data-background-color="#132B1D">
-          Пайплайн в широком смысле слова
-        </section>
-        <section data-background-color="#132B1D">
-          <section>1. Чем быстрее обратная связь, тем лучше</section>
-          <section>Проверка типов</section>
-          <section>TDD wallaby.js, majestic</section>
-          <section>Eslint</section>
-          <section>Stylelint</section>
-          <section>Хуки</section>
-        </section>
-        <section data-background-color="#132B1D">
-          <section>2. Не думать там, где это не нужно</section>
-          <section>Не писать документацию там где это возможно</section>
-          <section>Пользоваться общепринятым</section>
-          <section>Единообразие</section>
-          <section>Шарить настройки IDE</section>
-          <section>Подтягивать цвета из фигмы</section>
-        </section>
-        <section data-background-color="#132B1D">
-          <section>3. Проще сделать, чем не сделать</section>
-          <section>Больше линтеров</section>
-          <section>
-            <p>Проверка на копипасту</p>
-            <p>
-              <a href="https://github.com/kucherenko/jscpd"> github.com/kucherenko/jscpd </a>
-            </p>
-          </section>
-          <section data-transition="zoom-out fade-in" data-background="#132B1D">
-            <asciinema-player src="./casts/duplicates.cast" font-size="big"></asciinema-player>
-          </section>
           <section
-            data-transition="zoom-out fade-in"
-            data-background="#132B1D"
-            data-background-video="./img/duplicates.mp4"
-          ></section>
-          <section>Боты</section>
-          <section>Максимально строгий конфиг по типам</section>
-        </section>
-        <section data-background-color="#132B1D">
-          <section>4. Не повторяться и автоматизировать</section>
-          <section>Типы</section>
-          <section>OpenAPI =&gt; code</section>
-          <section>code =&gt; OpenAPI</section>
-          <section>GraphQL</section>
-          <section>Protobuf</section>
-          <section>Геренаторы в проектах</section>
-          <section>Написать свой генератор</section>
-          <section>Монорепозиторий</section>
-          <section>Автогенерация e2e тестов</section>
-        </section>
-        <section data-background-color="#132B1D">Внедрение и большие проекты</section>
-        <section data-background-color="#132B1D">Ложка дегтя</section>
-        <section>Делать то, что доставляет удовольствие, — значит быть свободным.</section>
+            data-transition="fade-in none"
+            data-background-color="#132B1D"
+            data-background-image="img/tablets.png"
+            >
+            Выбор
+          </section>
+            <section
+              data-transition="none zoom-out"
+              data-background-color="#132B1D"
+              data-background-image="img/tablets2.png"
+              >
+              Выбор
+            </section>
+              <section
+                data-transition="none zoom-out"
+                data-background-color="#132B1D"
+                data-background-image="img/eat.png"
+                >
+                После...
+              </section>
+                <section
+                  data-transition="fade-in none"
+                  data-background-color="#132B1D"
+                  data-background-image="img/eat0.png"
+                  >
+                  После...
+                </section>
+                  <section
+                    data-transition="fade-in none"
+                    data-background-color="#132B1D"
+                    data-background-image="./img/arch2.png"
+                    >
+                    <p class="terminal"><span class="blinking-cursor">$</span> matrix has you</p>
+                  </section>
+                  <section
+                    data-transition="none zoom-out"
+                    data-background-image="./img/happy.png"
+                    data-background-opacity="0.85"
+                    >
+                    <p class="terminal"><span class="blinking-cursor">$</span> matrix has you</p>
+                  </section>
+                  <section data-background-color="#132B1D">К чему это все?!</section>
+                  <section data-background-color="#132B1D">
+                    <p>&mdash; А может Матрица не про добро и зло?</p>
+                  </section>
+                  <section data-background-color="#132B1D">
+                    <p class="r-fit-text">Люди и машины</p>
+                  </section>
+                  <section data-transition="fade-in" data-background-color="#132B1D">
+                    <section>
+                      <p class="r-fit-text">Люди хуже потому что</p>
+                    </section>
+                    <section>
+                      <h3>Ограниченные ресурсы</h3>
+                    </section>
+                    <section>
+                      <h3>1. Ограничения</h3>
+                      <ul>
+                        <li class="fragment">Внимание</li>
+                        <li class="fragment">Память</li>
+                        <li class="fragment">Мыслетопливо</li>
+                      </ul>
+                    </section>
+                    <section>
+                      <h3>2. Лень</h3>
+                    </section>
+                    <section>
+                      <h3>3. Совместимость с другими</h3>
+                    </section>
+                    <section>
+                      <h3>4. Ментальные ловушки</h3>
+                    </section>
+                  </section>
+                  <section data-background-color="#132B1D">
+                    <section>
+                      <p class="r-fit-text">Люди лучше потому что</p>
+                    </section>
+                    <section>
+                      <h3>Творчески мыслят</h3>
+                    </section>
+                    <section>
+                      <h3>Обладают эмпатией</h3>
+                    </section>
+                    <section>
+                      <h3>Принимают стратегические решения</h3>
+                    </section>
+                  </section>
+                  <section data-transition="zoom-out" data-background-color="#132B1D">
+                    <h3>&mdash; Что делать?</h3>
+                  </section>
+                  <section
+                    data-transition="fade-in zoom-out"
+                    data-background-color="#132B1D"
+                    data-background-image="./img/arch.jpeg"
+                    >
+                    <p>&mdash; Построить свою матрицу!</p>
+                  </section>
+                  <section data-background-color="#132B1D">
+                    <h2>Пайплайн в широком смысле слова</h2>
+                    <div class="fragment">
+                      <table>
+                        <tr>
+                          <th></th>
+                          <th>От</th>
+                          <th>До</th>
+                        </tr>
+                        <tr class="fragment">
+                          <th>CI/CD</th>
+                          <td>Коммита</td>
+                          <td>Прода</td>
+                        </tr>
+                        <tr class="fragment">
+                          <th>Наш</th>
+                          <td>IDE и раньше</td>
+                          <td>∞</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                  <section>
+                    <p class="r-fit-text">Принципы</p>
+                  </section>
+                  <section data-background-color="#132B1D">
+                    <section>1. Чем быстрее и чаще обратная связь, тем лучше</section>
+                    <section>1.1 Быстрее</section>
+                    <section>
+                      <h3>Время до выявления проблемы</h3>
+                      <table>
+                        <tr class="fragment">
+                          <th>Где</th>
+                          <th>Когда</th>
+                          <th>$</th>
+                        </tr>
+                        <tr class="fragment">
+                          <td>В IDE</td>
+                          <td>Через секунды</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="fragment">
+                          <td>CI/CD</td>
+                          <td>Через минуты</td>
+                          <td>0</td>
+                        </tr>
+                        <tr class="fragment">
+                          <td>Code Review</td>
+                          <td>Один день</td>
+                          <td>$</td>
+                        </tr>
+                        <tr class="fragment">
+                          <td>QA</td>
+                          <td>Через дни</td>
+                          <td>$$</td>
+                        </tr>
+                        <tr class="fragment">
+                          <td>Прод</td>
+                          <td>Больно</td>
+                          <td>$$$$$</td>
+                        </tr>
+                      </table>
+                    </section>
+                    <section>
+                      Чем быстрее упадет пайплайн, тем лучше
+                    </section>
+                    <section>1.2 Чаще</section>
+                    <section data-background="img/tesla.jpeg"></section>
+                    <section>
+                      <p>Про радость</p>
+                      <blockquote>
+                        Почему я так радуюсь каждому кейсу про беспилотники в суде? Потому что чем быстрее
+                        человечество научится решать юридические проблемы беспилотников, тем быстрее
+                        беспилотники окажутся на наших улицах.
+                      </blockquote>
+                    </section>
+                    <section>
+                      <img src="img/anti.png" alt="" />
+                    </section>
+                    <section>
+                      Чем чаще будет падать, тем надежнее
+                    </section>
+                    <section>
+                      <p class="r-fit-text">Примеры</p>
+                    </section>
+                    <section>
+                      <p>Проверка типов</p>
+                      <img src="img/ide.png" alt="" />
+                    </section>
+                    <section>
+                      <p>
+                      REPL development (<a href="https://quokkajs.com/" target="_blank">quokkajs.com</a>)
+                      </p>
+                      <img src="img/quokka.gif" alt="" />
+                    </section>
+                    <section>
+                      <p>Видео</p>
+                      <ul>
+                        <li>
+                          PiterJS #20 - Николай Рыжиков - Clojure for frontenders
+                          <a href="https://www.youtube.com/watch?v=6oF_fRyKsd4" target="_blank"
+                                                                                >youtu.be/6oF_fRyKsd4</a
+                                                                              >
+                        </li>
+                            <li>
+                              PiterJS #23 Статическая vs динамическая типизация Ч1.
+                              <a href="https://www.youtube.com/watch?v=vJ-4TUKmMr8" target="_blank"
+                                                                                    >youtu.be/vJ-4TUKmMr8</a
+                                                                                  >
+                            </li>
+                                <li>
+                                  PiterJS #23 Статическая vs динамическая типизация Ч2.
+                                  <a href="https://youtu.be/mTHMKWxjo8E" target="_blank"
+                                                                         >youtu.be/mTHMKWxjo8E</a>
+                                </li>
+                      </ul>
+                      </ul>
+                    </section>
+                    <section>
+                      TDD/BDD
+                    </section>
+                    <section>
+                      <a href="https://github.com/Raathigesh/majestic" target="_blank">github.com/Raathigesh/majestic</a>
+                      <img src="img/majestic.gif" alt=""/>
+                    </section>
+                    <section>
+                      <p>
+                      Wallaby
+                      </p>
+                      <p>
+                      Дмитрий Махнёв — Wallaby.js & Quokka.js. Быстро. Красиво. Качественно.
+                      <a href="https://youtu.be/EOe7V5okn6Y" target="_blank">youtu.be/EOe7V5okn6Y</a>
+                      </p>
+                    </section>
+                    <section data-background-video="img/wallaby.mp4">
+
+                    </section>
+                    <section>
+                      <h2>eslint</h2>
+                      <img src="img/lint.png" alt="" />
+                    </section>
+                    <section>
+                      <img src="img/login.png" alt=""/>
+                    </section>
+                    <section data-transition="slide none">
+                      <pre><code data-trim>
+                    ...
+                        &lt;ul className="tab"&gt;
+                            &lt;li&gt;Login&lt;/li&gt;
+                            &lt;li&gt;SignUp&lt;/li&gt;
+                        &lt;/ul&gt;
+                    ...
+                      </code></pre>
+                    </section>
+                    <section data-transition="none slide">
+                      <pre><code data-trim>
+                    ...
+                        &lt;ul className="tab"&gt;
+                            &lt;li&gt;{ i18n('Login')}&lt;/li&gt;
+                            &lt;li&gt;{ i18n('SignUp')}&lt;/li&gt;
+                        &lt;/ul&gt;
+                    ...
+                      </code></pre>
+                    </section>
+                    <section>
+                      <h2>Eslint<span class="a1">.</span></h2>
+                      <pre><code class="javascript" data-trim="">
+      JSXText: (node) =&gt; {
+        context.report({
+          node,
+          message: 'Text "{{value}}" should be localized',
+          data: { value: node.value },
+        });
+      }
+                      </code></pre>
+                    </section>
+                    <section>
+                      <h2 class=a1>
+                        eslint --fix
+                      </h2>
+                      <pre><code class="javascript" data-trim="">
+      JSXText: (node) =&gt; {
+        context.report({
+        ...
+          fix: fixer =&gt; fixer.replaceText(node, fixI18n(value)),
+        ...
+        });
+      }
+                      </code></pre>
+                    </section>
+                    <section>
+                      <h3>
+                        Stylelint
+                      </h3>
+                      <img src="img/ws_stylesheets_stylelint_quick_fix_light.png" alt=""/>
+                    </section>
+                    <section>Git Хуки</section>
+                    <section>
+                      <ul>
+                        <li>
+                          Husky - <a href="https://github.com/typicode/husky"
+                            target="_blank">github.com/typicode/husky</a> (Снова
+                          MIT)
+                        </li>
+                        <li class="fragment">
+                          Lint-staged - <a href="https://github.com/okonet/lint-staged" target="_blank">github.com/okonet/lint-staged</a>
+                        </li>
+                      </ul>
+                    </section>
+                  </section>
+                  <section data-background-color="#132B1D">
+                    <section>2. Не думать там, где это не нужно</section>
+                    <section>
+                      <p>Пример</p>
+                      <img src="img/miro.png" alt=""/>
+                    </section>
+                    <section>
+                      Readme.md?
+                      <pre><code>
+                      git config --global core.autocrlf false
+                      </code></pre>
+                    </section>
+                    <section>
+                      <pre><code data-trim>
+$ echo "* text=auto" &gt;.gitattributes
+$ git add --renormalize .
+$ git status        # Show files that will be normalized
+$ git commit -m "Introduce end-of-line normalization"
+                      </code></pre>
+                    </section>
+                    <section>Избегать лишней документации</section>
+                    <section>
+                      <p>
+                        Дано
+                      </p>
+                      <ul>
+                        <li>SSL на локальном сервере (mkcert)</li>
+                        <li>Переменные окружения</li>
+                      </ul>
+                    </section>
+                    <section>
+                      <asciinema-player font-size="medium"
+                        src="./casts/install.cast"></asciinema-player>
+                    </section>
+                    <section>
+                      <pre><code>
+...
+  "postinstall": "run-script-os",
+  "postinstall:default": "./scripts/postinstall.sh",
+  "postinstall:win32": ".\\scripts\\postinstall.cmd",
+...
+                      </code></pre>
+                    </section>
+                    <section>
+                      <pre><code data-trim
+                      data-line-numbers="3-5|7-9|12-12|14-21|23-26|28-32">
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+if [ -n "${CI:-}" ]; then
+  echo "? Applilcation is running on CI server. Cert's folder should't be created\n" &amp;&amp; exit 0
+fi
+
+
+[ -d "./.certs" ] &amp;&amp; echo "? .certs folder is already exist. Skipping ssl keys creation \n" &amp;&amp; exit 0
+
+if ! command -v mkcert &amp;&gt; /dev/null
+then
+  echo "??  Can't find mkcert in you PATH. Pleace install it or specify your PATH variable \n"
+  echo "??  Visit to get more info https://github.com/FiloSottile/mkcert \n\n"
+  echo "opening..."
+  open "https://github.com/FiloSottile/mkcert"
+  exit 1
+fi
+
+# install mkcert, requires root password to install root cert
+mkcert --install
+mkdir ./.certs
+cd .certs &amp;&amp; mkcert -key-file key.pem -cert-file cert.pem "*.test" localhost
+
+[ -f "./.env.development" ] &amp;&amp; echo "? File .env.development llready exist.
+Skipping" &amp;&amp; exit 0
+
+echo "? Copy file template.env.development to .env.developmen"
+cp ../template.env.development ../.env.development
+
+                      </code></pre>
+                    </section>
+                    <section>
+                      Post скрипты лучше писать на JS
+                    </section>
+                    <section>
+                      <a href="https://github.com/zolotyh/react-nightmare">github.com/zolotyh/react-nightmare</a>
+                    </section>
+                    <section>Пользоваться общепринятым</section>
+                    <section>Единообразие</section>
+                    <section>Делиться настройками IDE в Git</section>
+                    <section>
+                      <pre><code data-trim class=".gitignore">
+### Intellij ###
+/.idea/*
+!/.idea/file.template.settings.xml
+!/.idea/fileTemplates/
+!/.idea/runConfigurations/
+                      </code></pre>
+
+                    </section>
+                    <section>
+                      <p>.idea/file.template.settings.xml</p>
+                      <pre><code data-trim data-line-numbers="5-5|6-7">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;project version="4"&gt;
+  &lt;component name="ExportableFileTemplateSettings"&gt;
+    &lt;default_templates&gt;
+      &lt;template name="Component.tsx" file-name="${NAME}/${NAME}.tsx" reformat="true" live-template-enabled="true"&gt;
+        &lt;template name="Component.tsx.child.0.tsx" file-name="${NAME}/__tests__}/${NAME}.test" reformat="true" live-template-enabled="true" /&gt;
+        &lt;template name="Component.tsx.child.1.scss" file-name="${NAME}/${NAME}.module" reformat="true" live-template-enabled="true" /&gt;
+      &lt;/template&gt;
+      &lt;template name="Component.tsx.child.0.tsx" file-name="${NAME}/__tests__}/${NAME}.test" reformat="true" live-template-enabled="true" /&gt;
+      &lt;template name="Component.tsx.child.1.scss" file-name="${NAME}/${NAME}.module" reformat="true" live-template-enabled="true" /&gt;
+    &lt;/default_templates&gt;
+  &lt;/component&gt;
+&lt;/project&gt;
+                      </code></pre>
+                    </section>
+                    <section>
+                      <img src="img/ncomp.png" alt=""/>
+                    </section>
+                    <section>
+                      <img src="img/ncomp2.png" alt="">
+                    </section>
+                    <section>
+                      <img src="img/ncomp3.png" alt=""/>
+                    </section>
+                    <section>
+                      <img src="img/ides.png" alt=""/>
+                    </section>
+                    <section>
+                      <pre><code class="gitignore">
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+                      </code></pre>
+                    </section>
+                    <section>Написать свой Language Server</section>
+                    <section>
+                      <asciinema-player font-size="big"  src="./casts/commit2.cast"></asciinema-player>
+                    </section>
+                    <section>
+                      <h2>Код</h2>
+                      <pre><code data-trim data-noescape
+                                 data-line-numbers="10-14|16-16|26-28|2|3-6">
+const getTasks = async (): CompletionItem =&gt; {
+  await (api.getTasks()).map((item) =&gt; {
+    return {
+      label: `${item?.fields?.summary?.substring(0, 60)} [${item.key}]`,
+      insertText: `feat: close ${item.key} (${item?.fields?.summary})`,
+    };
+  });
+};
+
+const connection = createConnection(ProposedFeatures.all);
+
+connection.onInitialized(() =&gt; {
+  connection.client.register(DidChangeTextDocumentNotification.type);
+});
+
+connection.onInitialize(() =&gt; {
+  return {
+    capabilities: {
+      completionProvider: {
+        resolveProvider: true,
+      },
+    },
+  };
+});
+
+connection.onCompletion(async () =&gt; {
+  return await getTasks();
+});
+
+connection.listen();
+                      </code></pre>
+                    </section>
+                  </section>
+                  <section data-background-color="#132B1D">
+                    <section>3. Проще сделать, чем не сделать</section>
+                    <section>
+                      <p>
+                        Больше линтеров
+                      </p>
+                      <ul>
+                        <li>
+                          HTML
+                          <a href="https://github.com/htmlhint/HTMLHint" target="_blank">github.com/htmlhint/HTMLHint</a>
+                        </li>
+                        <li>
+                          Правописание
+                          <a href="https://github.com/koalaman/shellcheck" target="_blank">github.com/koalaman/shellcheck</a>
+                        </li>
+                        <li>
+                          Структура JS проекта (Лизензии, тесты)
+                          <a href="https://github.com/SamVerschueren/clinton" target="_blank">github.com/SamVerschueren/clinton</a>
+                        </li>
+                        <li>Env files <a href="https://github.com/dotenv-linter/dotenv-linter">github.com/dotenv-linter/dotenv-linter</a></li>
+                        <li>Markdown<a href="https://github.com/DavidAnson/markdownlint">github.com/DavidAnson/markdownlint</a></li>
+                      </ul>
+                    </section>
+                    <section>
+                      <p>Проверка на копипасту</p>
+                      <p>
+                      <a href="https://github.com/kucherenko/jscpd"> github.com/kucherenko/jscpd </a>
+                      </p>
+                    </section>
+                    <section data-transition="zoom-out fade-in" data-background="#132B1D">
+                      <asciinema-player src="./casts/duplicates.cast" font-size="big"></asciinema-player>
+                    </section>
+                    <section
+                      data-transition="zoom-out fade-in"
+                      data-background="#132B1D"
+                      data-background-video="./img/duplicates.mp4"
+                      ></section>
+                    <section>
+                      <a href="https://www.conventionalcommits.org">
+                        conventionalcommits.org
+                      </a>
+                    </section>
+                    <section>
+                      <p>
+                        Боты
+                      </p>
+                      <ul>
+                        <li><a href="https://github.com/snyk/snyk">github.com/snyk/snyk</a></li>
+                        <li><a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a></li>
+                      </ul>
+                    </section>
+
+                  </section>
+                  <section data-background-color="#132B1D">
+                    <section>4. Не повторяться и автоматизировать</section>
+                    <section>Типы</section>
+                    <section>OpenAPI</section>
+                    <section>
+                      <a href="https://stoplight.io/open-source/prism">stoplight.io/open-source/prism</a>
+                      <p>src/setupProxy</p>
+                      <pre><code data-trim data-line-numbers="12-19|6-10">
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
+const variables = JSON.stringify(process.env);
+
+module.exports = function init(app) {
+  app.use('/api/login', (_req, res, next) => {
+    res.cookie('JSESSIONID', '1', { httpOnly: true });
+    res.send('{}');
+    next();
+  });
+
+  app.use(
+    '/api',
+    createProxyMiddleware({
+      target: 'http://localhost:4010',
+      changeOrigin: true,
+      pathRewrite: { '^/api': '' },
+    })
+  );
+};
+                      </code></pre>
+                    </section>
+                    <section>Геренаторы в проектах</section>
+                    <section>
+                      <p>
+                        Автогенерация e2e тестов
+                      </p>
+                    </section>
+                    <section>
+                      <p>
+                        Убираем фича флаги
+                      </p>
+                      <a href="https://npm.io/package/@cozy/codemods">npm.io/package/@cozy/codemods</a>
+                    </section>
+                    <section>
+                      before
+                      <pre><code data-trim>
+import Old from 'old'
+import New from 'new'
+
+flag("My super feature") ? &lt;Old /&gt; : &lt;New /&gt;
+                      </code></pre>
+                      after
+                      <pre><code data-trim>
+import New from 'new'
+
+&lt;New /&gt;
+                      </code></pre>
+                    </section>
+                  </section>
+
+                  <section data-background-color="#132B1D">Ложка дегтя</section>
+
+                  <section data-background-color="#132B1D">
+                    <h3>
+                      Матрица Манштейна
+                    </h3>
+                    <table class="table">
+                      <tr>
+                        <td></td>
+                        <th style="width: 30vw">Глупые</th>
+                        <th style="width: 30vw">Умные</th>
+                      </tr>
+                      <tr>
+                        <th>Ленивые</th>
+                        <td style="height: 15vh">Не трогать</td>
+                        <td style="height: 15vh">Звезды</td>
+                      </tr>
+                      <tr>
+                        <th>Трудолюбивые</th>
+                        <td>Уволить<br/>немедленно</td>
+                        <td>Отличные<br>управляющие</td>
+                      </tr>
+                    </table>
+                  </section>
+                  <section>
+                    <h2 class="a1">Спасибо</h2>
+                    <hr>
+                    <p>twitter: @zolotyh</p>
+                    <p>telegram:  @aazolotyh</p>
+                    <p>github: @zolotyh</p>
+                  </section>
       </div>
     </div>
 
